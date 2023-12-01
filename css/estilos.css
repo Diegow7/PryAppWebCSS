@@ -1,0 +1,165 @@
+/*Comentarios*/
+
+/*
+Componentes basicps de un estilo CSS
+|<-------------------------------------->| regla CSS
+|<-->| selector
+     |<--------------------------------->| declaración
+     |<-->| propiedad
+            |<-->| valor
+body{ color: brown; font-family: Impact;}
+En CSS3 se incluyen 239 propiedades
+*/
+
+/* SELECTORES
+Selector universal: eliminar el margen y el relleno
+*/
+*{
+    margin:0;
+    padding:0;
+}
+
+/* Selector de tipo o etiqueta*/
+nav{
+    color: blue;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+/* Selector descendente*/
+/*Elementos dentro de otros*/
+article{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: green;
+}
+article span{
+    color: red;
+}
+article span a{
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+    background-color: aquamarine;
+}
+
+/*
+Selector de calse
+aplicar estilos mediante el atributo class
+*/
+.destacado{
+    color: orange;
+    font-weight: bold;
+    background-color: green;
+}
+.error{
+    color: red;
+    font-weight: bold;
+    background-color: white;
+}
+.alerta{
+    color: black;
+    padding: 5px;
+    border: 5x solid black;
+    font-weight: bold;
+    background-color: yellow;
+}
+
+/*selector por id*/
+#destacado{
+    background-color: blueviolet;
+    color: white;
+}
+div#destacado{
+    background-color: darkcyan;
+}
+
+/*
+UNIDADES DE MEDIDA
+in - pulgadas
+cm - centimentro
+mm - milimetros
+pt - puntos
+pc - picas
+
+0.5in -> .5in
+
+UNIDADES RELATIVAS
+em no la etiqueta <em>, relativa al tamaño de la letra
+ex - relativa con respecto a la altura de la letra x
+px - pixel relativa respecto a la resolución de la pantalla del dispositivo
+
+PORCENTAJES
+p{font-size: 50%;}
+
+COLORES
+---Palabra clave en inglés
+red, black, blue, green, ...
+
+---RGB decimal
+referencia a Red, Blue, Green y CYMK
+valores entre 0 y 255
+p{color: rgb(15,50,200);}
+
+---RGB porcentual
+p{color: rgb(15%,50%,20%);}
+
+---RGB hexadecimal
+p{color: #34AB15;}
+p{color: #33AA11;} -> p{color: #3A1;} 
+
+MODELO DE CAJAS
+- cuando se incerta una etiqueta HTML se crea una caja de forma automática
+- cada elemento dentro de la pagina es una 'caja'
+- las cajas no son visibles a simple vista, 
+inicialmente no tienen un color de fondo
+- los navegadores las colocan de forma automática,
+pero con CSS es posible modificar sus características
+
+ALTURA
+height
+min- max-
+
+ANCHURA
+widht
+
+MARGEN
+margin-top, margin-bottom, margin-left, margin-right
+
+RELLENO
+padding-top, padding-botom, padding-right,
+
+BORDES
+border
+*/
+div{
+    width: 250px;
+    padding-left: 50px;
+    padding-right: 30px;
+    margin-left: 80px;
+    margin-right: 30px;
+    border: 5px solid black;
+}
+
+/*
+FONDOS
+Esto puede ser una imagen o color
+background 
+*/
+body{
+    background: beige;
+}
+
+/*
+POSICIONAMIENTO
+Se puede tener elementos en linea o en bloque: inline, block
+position: static, relative, absolute, fixed, inherit
+DESPLAZAMIENTO
+top, right, bottom, left y se puede asignar un valor
+
+TEXTO
+p > span{color: blue;}
+h1{}
+h2{}
+h1+h2{}
+*/
